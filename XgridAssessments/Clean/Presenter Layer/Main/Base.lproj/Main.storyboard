@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4mz-zM-LaI">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar View Controller-->
+        <scene sceneID="ovM-sR-jMg">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4mz-zM-LaI" customClass="TabBarViewController" customModule="XgridAssessments" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Dvu-ds-xgg">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="PdD-cp-Drb" kind="relationship" relationship="viewControllers" id="0cr-Yx-R7r"/>
+                        <segue destination="EKk-da-AL3" kind="relationship" relationship="viewControllers" id="SbP-IA-buK"/>
+                        <segue destination="BOh-OG-EyX" kind="relationship" relationship="viewControllers" id="gEg-bX-HS0"/>
+                        <segue destination="GBI-VI-LFq" kind="relationship" relationship="viewControllers" id="Bwr-HR-fNe"/>
+                        <segue destination="vfz-ZT-v8n" kind="relationship" relationship="viewControllers" id="yqh-WD-SPb"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qp2-Lv-Xl1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1303" y="-780"/>
+        </scene>
+        <!--Account-->
+        <scene sceneID="QsO-n6-aEv">
+            <objects>
+                <viewController storyboardIdentifier="AccountViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vfz-ZT-v8n" customClass="AccountViewController" customModule="XgridAssessments" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tSd-Z0-S8M">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ed-qE-4AU">
+                                <rect key="frame" x="164.66666666666666" y="415.66666666666669" width="64" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DXW-hC-KPb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Ed-qE-4AU" firstAttribute="centerX" secondItem="tSd-Z0-S8M" secondAttribute="centerX" id="Sig-ZQ-Ybt"/>
+                            <constraint firstItem="6Ed-qE-4AU" firstAttribute="centerY" secondItem="tSd-Z0-S8M" secondAttribute="centerY" id="TI5-LW-aHl"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Account" image="person.crop.circle" catalog="system" id="6zn-75-oIm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ui5-Hn-TEk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="724" y="212"/>
+        </scene>
+        <!--Bag-->
+        <scene sceneID="Qec-th-HAq">
+            <objects>
+                <viewController storyboardIdentifier="BagsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GBI-VI-LFq" customClass="BagsViewController" customModule="XgridAssessments" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GL9-Gp-r6U">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="T8I-2E-9v8">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gwA-3l-vcC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="T8I-2E-9v8" firstAttribute="top" secondItem="gwA-3l-vcC" secondAttribute="top" id="BUE-P5-PdC"/>
+                            <constraint firstItem="T8I-2E-9v8" firstAttribute="leading" secondItem="gwA-3l-vcC" secondAttribute="leading" id="XLZ-I8-Aco"/>
+                            <constraint firstItem="gwA-3l-vcC" firstAttribute="bottom" secondItem="T8I-2E-9v8" secondAttribute="bottom" id="o7h-4u-90I"/>
+                            <constraint firstItem="gwA-3l-vcC" firstAttribute="trailing" secondItem="T8I-2E-9v8" secondAttribute="trailing" id="x4q-5c-Vxd"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Bag" image="bag" catalog="system" id="Uvi-sn-LeG"/>
+                    <connections>
+                        <outlet property="tableView" destination="T8I-2E-9v8" id="CwF-tl-0sP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1No-Cf-LGd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-37" y="212"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="bzZ-lY-EAF">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PdD-cp-Drb" customClass="HomeViewController" customModule="XgridAssessments" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MnI-Cn-NtH">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xnb-EI-QY2">
+                                <rect key="frame" x="173.66666666666666" y="415.66666666666669" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rr5-Xn-ZOg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Xnb-EI-QY2" firstAttribute="centerY" secondItem="MnI-Cn-NtH" secondAttribute="centerY" id="Yk8-5u-H1p"/>
+                            <constraint firstItem="Xnb-EI-QY2" firstAttribute="centerX" secondItem="MnI-Cn-NtH" secondAttribute="centerX" id="iZV-j5-uZt"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="5e5-Qg-cCm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f3C-cF-kSp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2184" y="212"/>
+        </scene>
+        <!--Brand-->
+        <scene sceneID="Q2t-sX-Vys">
+            <objects>
+                <viewController storyboardIdentifier="BrandViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BOh-OG-EyX" customClass="BrandViewController" customModule="XgridAssessments" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0qL-AQ-zMg">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXF-6A-gAx">
+                                <rect key="frame" x="173.66666666666666" y="415.66666666666669" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dQY-E6-7Qo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PXF-6A-gAx" firstAttribute="centerX" secondItem="0qL-AQ-zMg" secondAttribute="centerX" id="81u-pp-XMd"/>
+                            <constraint firstItem="PXF-6A-gAx" firstAttribute="centerY" secondItem="0qL-AQ-zMg" secondAttribute="centerY" id="xel-BJ-H1d"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Brand" image="tag" catalog="system" id="pgS-Ce-i32"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fgs-nw-HGp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-718" y="212"/>
+        </scene>
+        <!--Categories-->
+        <scene sceneID="jep-F4-kRv">
+            <objects>
+                <viewController storyboardIdentifier="CategoriesViewController" id="EKk-da-AL3" customClass="CategoriesViewController" customModule="XgridAssessments" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KRC-aG-MHo">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDa-BS-6WG">
+                                <rect key="frame" x="155" y="415.66666666666669" width="83" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tPj-mM-AdL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bDa-BS-6WG" firstAttribute="centerY" secondItem="KRC-aG-MHo" secondAttribute="centerY" id="NNO-i8-UV8"/>
+                            <constraint firstItem="bDa-BS-6WG" firstAttribute="centerX" secondItem="KRC-aG-MHo" secondAttribute="centerX" id="XHj-L8-N2r"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Categories" image="list.bullet.clipboard" catalog="system" id="rzS-xQ-CwU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="edo-Tw-YIU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1393" y="212"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bag" catalog="system" width="128" height="128"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="list.bullet.clipboard" catalog="system" width="103" height="128"/>
+        <image name="person.crop.circle" catalog="system" width="128" height="123"/>
+        <image name="tag" catalog="system" width="128" height="118"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

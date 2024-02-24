@@ -1,0 +1,44 @@
+PODS:
+  - ACFloatingTextfield-Objc (1.9)
+  - IQKeyboardManagerSwift (6.5.10)
+  - MBProgressHUD (1.2.0)
+  - Realm (10.20.1):
+    - Realm/Headers (= 10.20.1)
+  - Realm/Headers (10.20.1)
+  - RealmSwift (10.20.1):
+    - Realm (= 10.20.1)
+  - SDWebImage (5.17.0):
+    - SDWebImage/Core (= 5.17.0)
+  - SDWebImage/Core (5.17.0)
+  - Toast-Swift (5.0.1)
+
+DEPENDENCIES:
+  - ACFloatingTextfield-Objc (~> 1.9)
+  - IQKeyboardManagerSwift (= 6.5.10)
+  - MBProgressHUD
+  - RealmSwift (~> 10.20.1)
+  - SDWebImage
+  - Toast-Swift (~> 5.0.1)
+
+SPEC REPOS:
+  trunk:
+    - ACFloatingTextfield-Objc
+    - IQKeyboardManagerSwift
+    - MBProgressHUD
+    - Realm
+    - RealmSwift
+    - SDWebImage
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  ACFloatingTextfield-Objc: 1c3d33e90af7dd274eff508f0082fad12f2eeb72
+  IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  Realm: fac5ecd031fcb81171627b74944c885662d4b266
+  RealmSwift: 9b02d25acb46a14756bde9893abb99e2e3675923
+  SDWebImage: 750adf017a315a280c60fde706ab1e552a3ae4e9
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+
+PODFILE CHECKSUM: 92a44be6b43df700db1a1b9f77907b97625f4e21
+
+COCOAPODS: 1.15.2
